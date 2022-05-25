@@ -1,0 +1,76 @@
+[
+  {
+    "id": "N5IcFslUqM",
+    "icon": "folder",
+    "label": "Folder01",
+    "type": "Folder",
+    "child": [
+      {
+        "id": "GPk120uvBv",
+        "icon": "file-code",
+        "label": "File01",
+        "type": "File",
+        "fileExtension": "js"
+      },
+      {
+        "id": "mL-6Pk8vdl",
+        "icon": "folder",
+        "label": "Folder01-01",
+        "type": "Folder",
+        "child": [
+          {
+            "id": "v-OOyNYe8R",
+            "icon": "folder",
+            "label": "Folder01-01-01",
+            "type": "Folder",
+            "child": [
+              {
+                "id": "UuMJ88VhrR",
+                "icon": "file-code",
+                "label": "File02",
+                "type": "File",
+                "fileExtension": "css"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "p9HE6ZjrT7",
+        "icon": "file",
+        "label": "File03",
+        "type": "File",
+        "fileExtension": "cfg"
+      },
+      {
+        "id": "T5hWaMmawr",
+        "icon": "folder",
+        "label": "Folder01-02",
+        "type": "Folder",
+        "child": []
+      }
+    ]
+  },
+  {
+    "id": "dwUQeX2ylu",
+    "icon": "file-code",
+    "label": "File04",
+    "type": "File",
+    "fileExtension": "js"
+  },
+  {
+    "id": "LnCDhhjQun",
+    "icon": "folder",
+    "label": "Folder02",
+    "type": "Folder",
+    "child": [
+      {
+        "id": "cvqCWr8Oqx",
+        "icon": "file-code",
+        "label": "File05",
+        "type": "File",
+        "fileExtension": "js"
+      }
+    ]
+  }
+]

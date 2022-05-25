@@ -24,14 +24,16 @@ Basic Structure of basicTree.JSON is an array.Inside this array, user can layout
 `Format of Folder`
 
 - [x] Fixed condition
-- [x] "icon" : Please give it a "folder" for rendering icon of folder that provide by Font Awesome.
-- [x] "type" : Please set it as "Folder".
+
+  - "icon" : Please give it a "folder" for rendering icon of folder that provide by Font Awesome.
+  - "type" : Please set it as "Folder".
 
 - [x] Variable condition
-- [x] "id" : User can give an unique id to each folder whatever the string is.
-- [x] "label" : User can give an name to each folder whatever the string is, it will show on screen.
-- [x] "color" : User can set color of icon, or just show default color(black).
-- [x] "child" : A "Folder" can contain any number of `Folder` and `File`, set it as an array.
+
+  - "id" : User can give an unique id to each folder whatever the string is.
+  - "label" : User can give an name to each folder whatever the string is, it will show on screen.
+  - "color" : User can set color of icon, or just show default color(black).
+  - "child" : A "Folder" can contain any number of `Folder` and `File`, set it as an array.
 
 ```
 //Example of "Folder" object format
@@ -49,14 +51,16 @@ Basic Structure of basicTree.JSON is an array.Inside this array, user can layout
 `Format of File`
 
 - [x] Fixed condition
-- [x] "type" : Please set it as "File".
+
+- "type" : Please set it as "File".
 
 - [x] Variable condition
-- [x] "id" : User can give an unique id to each folder whatever the string is.
-- [x] "icon" : User can set icon of icon Font Awesome.
-- [x] "label" : User can give an name to each folder whatever the string is, it will show on screen.
-- [x] "color" : User can set color of icon, or just show default color(black).
-- [x] "fileExtension" : User can set file extension showed on screen, default value is empty.
+
+  - "id" : User can give an unique id to each folder whatever the string is.
+  - "icon" : User can set icon of icon Font Awesome.
+  - "label" : User can give an name to each folder whatever the string is, it will show on screen.
+  - "color" : User can set color of icon, or just show default color(black).
+  - "fileExtension" : User can set file extension showed on screen, default value is empty.
 
 ```
 //Example of "File" object format
