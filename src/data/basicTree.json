@@ -1,0 +1,126 @@
+[
+  {
+    "id": "v-OOyNYe8R",
+    "icon": "folder",
+    "label": "public",
+    "color": "",
+    "type": "Folder",
+    "child": [
+      {
+        "id": "UuMJ88VhrR",
+        "icon": "fa-brands fa-html5",
+        "label": "index",
+        "color": "#FF0000",
+        "type": "File",
+        "fileExtension": "html"
+      },
+      {
+        "id": "iOM4T5ch5R",
+        "icon": "fa-file-image",
+        "label": "logo",
+        "color": "#20B2AA",
+        "type": "File",
+        "fileExtension": "png"
+      },
+      {
+        "id": "edM4hdUhR7",
+        "icon": "fa-file-code",
+        "label": "logo",
+        "color": "#FFD700",
+        "type": "File",
+        "fileExtension": "json"
+      }
+    ]
+  },
+  {
+    "id": "y1i2r8u2NV",
+    "icon": "folder",
+    "label": "src",
+    "color": "",
+    "type": "Folder",
+    "child": [
+      {
+        "id": "h7ItuxrBqY",
+        "icon": "folder",
+        "label": "components",
+        "color": "",
+        "type": "Folder",
+        "child": [
+          {
+            "id": "jVstIejSD7",
+            "icon": "fa-brands fa-js",
+            "label": "basicTree",
+            "color": "#FFD700",
+            "type": "File",
+            "fileExtension": "js"
+          }
+        ]
+      },
+      {
+        "id": "qxTbrzezsH",
+        "icon": "folder",
+        "label": "data",
+        "color": "",
+        "type": "Folder",
+        "child": [
+          {
+            "id": "o3uVPuUIwX",
+            "icon": "fa-file-code",
+            "label": "basicTree",
+            "color": "#FFD700",
+            "type": "File",
+            "fileExtension": "json"
+          }
+        ]
+      },
+      {
+        "id": "vaXY3Iw1Ga",
+        "icon": "fa-brands fa-css3-alt",
+        "label": "App",
+        "color": "#00BFFF",
+        "type": "File",
+        "fileExtension": "css"
+      },
+      {
+        "id": "MMWSqw3Fss",
+        "icon": "fa-brands fa-js",
+        "label": "App",
+        "color": "#FFD700",
+        "type": "File",
+        "fileExtension": "js"
+      },
+      {
+        "id": "9LlNLzRrSq",
+        "icon": "fa-brands fa-css3-alt",
+        "label": "index",
+        "color": "#00BFFF",
+        "type": "File",
+        "fileExtension": "css"
+      },
+      {
+        "id": "nKXz5hxEDI",
+        "icon": "fa-brands fa-js",
+        "label": "index",
+        "color": "#FFD700",
+        "type": "File",
+        "fileExtension": "js"
+      }
+    ]
+  },
+  {
+    "id": "Ui3eJJK67jk",
+    "icon": "fa-file-code",
+    "label": "package-lock",
+    "color": "#FFD700",
+    "type": "File",
+    "fileExtension": "json"
+  },
+  {
+    "id": "Huj38HKlo32",
+    "icon": "fa-file-code",
+    "label": "package",
+    "color": "#FFD700",
+    "type": "File",
+    "fileExtension": "json"
+  }
+]

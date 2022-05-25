@@ -1,70 +1,109 @@
-# Getting Started with Create React App
+# Folder Tree Component
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).\
+User can render a Folder tree component on the screen by editing json in a specific format.
 
-## Available Scripts
+## Feature
 
-In the project directory, you can run:
+- [x] Folder is foldable
+- [x] Format of JSON
 
-### `npm start`
+### Folder is foldable
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+User can show contains inside folder by click the folder, and hide all contains by click a again.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Format of JSON
 
-### `npm test`
+User can render a Folder tree component on the screen by editing `../src/data/basicTree.json`.\
+Basic Structure of basicTree.JSON is an array.Inside this array, user can layout any number of `Folder` and `File`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+[{Folder},{Folder},......,{File},{File},.....]
+```
 
-### `npm run build`
+`Format of Folder`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [x] Fixed condition
+- [x] "icon" : Please give it a "folder" for rendering icon of folder that provide by Font Awesome.
+- [x] "type" : Please set it as "Folder".
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [x] Variable condition
+- [x] "id" : User can give an unique id to each folder whatever the string is.
+- [x] "label" : User can give an name to each folder whatever the string is, it will show on screen.
+- [x] "color" : User can set color of icon, or just show default color(black).
+- [x] "child" : A "Folder" can contain any number of `Folder` and `File`, set it as an array.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+//Example of "Folder" object format
 
-### `npm run eject`
+{
+    "id": "v-OOyNYe8R",
+    "icon": "folder",
+    "label": "public",
+    "color": "",
+    "type": "Folder",
+    "child": [{Folder},......,{File},.....]
+}
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+`Format of File`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [x] Fixed condition
+- [x] "type" : Please set it as "File".
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- [x] Variable condition
+- [x] "id" : User can give an unique id to each folder whatever the string is.
+- [x] "icon" : User can set icon of icon Font Awesome.
+- [x] "label" : User can give an name to each folder whatever the string is, it will show on screen.
+- [x] "color" : User can set color of icon, or just show default color(black).
+- [x] "fileExtension" : User can set file extension showed on screen, default value is empty.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+//Example of "File" object format
 
-## Learn More
+{
+    "id": "nKXz5hxEDI",
+    "icon": "fa-brands fa-js",
+    "label": "index",
+    "color": "",
+    "type": "File",
+    "fileExtension":"js"
+}
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Icon
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+User can set icon of file whatever they want. Please check icon code on [Font Awesome](https://fontawesome.com/icons).
 
-### Code Splitting
+`Available Icon List`:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- [x] Folder : "folder"
+- [x] Folder : "fa-folder-open"
+- [x] JavaScript : "fa-brands fa-js"
+- [x] HTML5 : "fa-brands fa-html5"
+- [x] CSS3 : "fa-brands fa-css3-alt"
+- [x] File : "fa-file","fa-file-code"
 
-### Analyzing the Bundle Size
+If icon code do not work, please edit App.js as following code:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+//App.js Line 6
 
-### Making a Progressive Web App
+import {
+  import {
+  faFolder,
+  faFolderOpen,
+  faFile,
+  faFileCode,
+  faFileImage,
+// import icon you want here:
+  "addIcon"
+} from "@fortawesome/free-solid-svg-icons";
+} from "@fortawesome/free-solid-svg-icons";
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+//Line 14
 
-### Advanced Configuration
+//add icon you import into this function
+library.add(fab, faFolder, faFolderOpen, faFile, faFileCode, faFileImage, "addIcon");
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
