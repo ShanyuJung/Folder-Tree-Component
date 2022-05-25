@@ -3,6 +3,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).\
 User can render a Folder tree component on the screen by editing json in a specific format.
 
+![DemoImage](https://github.com/ShanyuJung/Folder-Tree-Component/blob/master/assets/FolderTreeDemo.png)
+
 ## Feature
 
 - [x] Folder is foldable
