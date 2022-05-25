@@ -52,7 +52,7 @@ Basic Structure of basicTree.JSON is an array.Inside this array, user can layout
 
 - [x] Fixed condition
 
-- "type" : Please set it as "File".
+  - "type" : Please set it as "File".
 
 - [x] Variable condition
 
